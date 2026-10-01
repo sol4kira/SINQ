@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config()
+const envFile = process.env.NODE_ENV === 'production' ? '.env.prod' : '.env.dev';
+require('dotenv').config({ path: envFile });
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const PORT = process.env.PORT||3000
