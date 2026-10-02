@@ -1,4 +1,5 @@
-Backend/.env
+Backend/.env.dev
+Backend/.env.prod
 Backend/node_modules
 Frontend/node_modules
 dist/
